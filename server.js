@@ -27,6 +27,7 @@ app.get('/', function (req, res) {
 
 app.use('/node_modules', express.static('node_modules'));
 
-app.listen(8080, function () {
-  console.log('Server running at http://127.0.0.1:8080/');
-});
+app.listen(3000,'10.101.192.67' || 'localhost',function() {
+    console.log('Application worker ' + process.pid + ' started...');
+  }
+);
